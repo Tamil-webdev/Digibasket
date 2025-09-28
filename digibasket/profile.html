@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - DIGIBASKET</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none;">
+                        <span class="logo-digi">DIGI</span><span class="logo-basket">BASKET</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="categories.html" class="nav-link">Categories</a>
+                    <a href="deals.html" class="nav-link">Deals</a>
+                    <a href="cart.html" class="nav-link">Cart</a>
+                    <a href="profile.html" class="nav-link active">Profile</a>
+                </nav>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search for products, brands and more..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Right Icons -->
+                <div class="header-icons">
+                    <a href="cart.html" class="icon-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <a href="profile.html" class="icon-link">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Search products..." class="mobile-search-input">
+                </div>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="categories.html" class="mobile-nav-link">Categories</a>
+                    <a href="deals.html" class="mobile-nav-link">Deals</a>
+                    <a href="cart.html" class="mobile-nav-link">Cart</a>
+                    <a href="profile.html" class="mobile-nav-link">Profile</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Profile</h1>
+            <p class="page-subtitle">Manage your account and preferences</p>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Profile Sidebar -->
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Profile Picture">
+                            <button class="edit-avatar-btn">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">John Doe</h3>
+                            <p class="profile-email">john.doe@email.com</p>
+                            <span class="profile-status verified">
+                                <i class="fas fa-check-circle"></i>
+                                Verified Account
+                            </span>
+                        </div>
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="#" class="profile-nav-link active">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </a>
+                        <a href="#" class="profile-nav-link">
+                            <i class="fas fa-shopping-bag"></i>
+                            My Orders
+                        </a>
+                        <a href="#" class="profile-nav-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Addresses
+                        </a>
+                        <a href="#" class="profile-nav-link">
+                            <i class="fas fa-credit-card"></i>
+                            Payment Methods
+                        </a>
+                        <a href="#" class="profile-nav-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="profile-nav-link">
+                            <i class="fas fa-bell"></i>
+                            Notifications
+                        </a>
+                        <a href="#" class="profile-nav-link">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </a>
+                        <a href="#" class="profile-nav-link logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Profile Content -->
+                <div class="profile-content">
+                    <!-- Personal Information -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Personal Information</h2>
+                            <button class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                                Edit
+                            </button>
+                        </div>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Full Name</label>
+                                <input type="text" value="John Doe" readonly>
+                            </div>
+                            <div class="info-item">
+                                <label>Email Address</label>
+                                <input type="email" value="john.doe@email.com" readonly>
+                            </div>
+                            <div class="info-item">
+                                <label>Phone Number</label>
+                                <input type="tel" value="+91 9876543210" readonly>
+                            </div>
+                            <div class="info-item">
+                                <label>Date of Birth</label>
+                                <input type="date" value="1990-01-15" readonly>
+                            </div>
+                            <div class="info-item">
+                                <label>Gender</label>
+                                <select disabled>
+                                    <option value="male" selected>Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="info-item">
+                                <label>Location</label>
+                                <input type="text" value="Mumbai, Maharashtra" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Orders -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Recent Orders</h2>
+                            <a href="#" class="view-all-link">View All Orders</a>
+                        </div>
+
+                        <div class="orders-list">
+                            <div class="order-item">
+                                <div class="order-image">
+                                    <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="iPhone">
+                                </div>
+                                <div class="order-details">
+                                    <h4 class="order-product">iPhone 15 Pro Max 256GB</h4>
+                                    <p class="order-id">Order #DB123456789</p>
+                                    <p class="order-date">Ordered on Jan 15, 2025</p>
+                                </div>
+                                <div class="order-status">
+                                    <span class="status-badge delivered">Delivered</span>
+                                    <p class="order-price">₹1,34,900</p>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="action-btn">Track Order</button>
+                                    <button class="action-btn">Buy Again</button>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-image">
+                                    <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg" alt="Headphones">
+                                </div>
+                                <div class="order-details">
+                                    <h4 class="order-product">Sony WH-1000XM5 Headphones</h4>
+                                    <p class="order-id">Order #DB123456788</p>
+                                    <p class="order-date">Ordered on Jan 12, 2025</p>
+                                </div>
+                                <div class="order-status">
+                                    <span class="status-badge shipped">Shipped</span>
+                                    <p class="order-price">₹26,990</p>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="action-btn">Track Order</button>
+                                    <button class="action-btn">Cancel Order</button>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-image">
+                                    <img src="https://images.pexels.com/photos/1148399/pexels-photo-1148399.jpeg" alt="Book">
+                                </div>
+                                <div class="order-details">
+                                    <h4 class="order-product">The Psychology of Money</h4>
+                                    <p class="order-id">Order #DB123456787</p>
+                                    <p class="order-date">Ordered on Jan 10, 2025</p>
+                                </div>
+                                <div class="order-status">
+                                    <span class="status-badge processing">Processing</span>
+                                    <p class="order-price">₹299</p>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="action-btn">Track Order</button>
+                                    <button class="action-btn">Cancel Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Stats -->
+                    <div class="content-section">
+                        <h2 class="section-title">Account Statistics</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number">24</h3>
+                                    <p class="stat-label">Total Orders</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-rupee-sign"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number">₹2,45,670</h3>
+                                    <p class="stat-label">Total Spent</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number">12</h3>
+                                    <p class="stat-label">Wishlist Items</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number">18</h3>
+                                    <p class="stat-label">Reviews Given</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="content-section">
+                        <h2 class="section-title">Quick Actions</h2>
+                        <div class="quick-actions">
+                            <button class="quick-action-btn">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Manage Addresses</span>
+                            </button>
+                            <button class="quick-action-btn">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Payment Methods</span>
+                            </button>
+                            <button class="quick-action-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Download Invoices</span>
+                            </button>
+                            <button class="quick-action-btn">
+                                <i class="fas fa-headset"></i>
+                                <span>Contact Support</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-digi">DIGI</span><span class="logo-basket">BASKET</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted online marketplace for all your digital shopping needs. Quality products, great prices, fast delivery.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Policies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 DIGIBASKET. All rights reserved. Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

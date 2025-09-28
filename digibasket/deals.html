@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - DIGIBASKET</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none;">
+                        <span class="logo-digi">DIGI</span><span class="logo-basket">BASKET</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="categories.html" class="nav-link">Categories</a>
+                    <a href="deals.html" class="nav-link active">Deals</a>
+                    <a href="cart.html" class="nav-link">Cart</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </nav>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search for products, brands and more..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Right Icons -->
+                <div class="header-icons">
+                    <a href="cart.html" class="icon-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <a href="profile.html" class="icon-link">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Search products..." class="mobile-search-input">
+                </div>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="categories.html" class="mobile-nav-link">Categories</a>
+                    <a href="deals.html" class="mobile-nav-link">Deals</a>
+                    <a href="cart.html" class="mobile-nav-link">Cart</a>
+                    <a href="profile.html" class="mobile-nav-link">Profile</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header deals-header">
+        <div class="container">
+            <h1 class="page-title">🔥 Hot Deals & Offers</h1>
+            <p class="page-subtitle">Limited time offers - Save up to 70% on selected items</p>
+            <div class="deals-timer">
+                <div class="timer-item">
+                    <span class="timer-number">23</span>
+                    <span class="timer-label">Hours</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number">45</span>
+                    <span class="timer-label">Minutes</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number">12</span>
+                    <span class="timer-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Deals -->
+    <section class="flash-deals-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">⚡ Flash Deals</h2>
+                <span class="deals-ending">Ending Soon!</span>
+            </div>
+            <div class="products-grid">
+                <div class="product-card flash-deal">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="iPhone 15 Pro Max">
+                        <span class="product-badge flash">Flash Deal</span>
+                        <span class="discount-badge">-15%</span>
+                        <div class="deal-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>2h 30m left</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">iPhone 15 Pro Max 256GB</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(1247)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,27,415</span>
+                            <span class="original-price">₹1,49,900</span>
+                        </div>
+                        <div class="savings">You Save: ₹22,485</div>
+                        <button class="add-to-cart-btn flash">
+                            <i class="fas fa-bolt"></i>
+                            Grab Deal Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card flash-deal">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="MacBook Air M2">
+                        <span class="product-badge flash">Flash Deal</span>
+                        <span class="discount-badge">-12%</span>
+                        <div class="deal-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>1h 45m left</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MacBook Air M2 13-inch</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(756)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,09,912</span>
+                            <span class="original-price">₹1,24,900</span>
+                        </div>
+                        <div class="savings">You Save: ₹14,988</div>
+                        <button class="add-to-cart-btn flash">
+                            <i class="fas fa-bolt"></i>
+                            Grab Deal Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card flash-deal">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg" alt="Sony Headphones">
+                        <span class="product-badge flash">Flash Deal</span>
+                        <span class="discount-badge">-25%</span>
+                        <div class="deal-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>3h 15m left</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sony WH-1000XM5 Headphones</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(1534)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹24,742</span>
+                            <span class="original-price">₹32,990</span>
+                        </div>
+                        <div class="savings">You Save: ₹8,248</div>
+                        <button class="add-to-cart-btn flash">
+                            <i class="fas fa-bolt"></i>
+                            Grab Deal Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card flash-deal">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg" alt="Samsung TV">
+                        <span class="product-badge flash">Flash Deal</span>
+                        <span class="discount-badge">-35%</span>
+                        <div class="deal-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>4h 20m left</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Samsung 55" 4K Smart TV</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(892)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹42,893</span>
+                            <span class="original-price">₹65,990</span>
+                        </div>
+                        <div class="savings">You Save: ₹23,097</div>
+                        <button class="add-to-cart-btn flash">
+                            <i class="fas fa-bolt"></i>
+                            Grab Deal Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Deals -->
+    <section class="daily-deals-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📅 Daily Deals</h2>
+                <span class="deals-refresh">New deals every day</span>
+            </div>
+            <div class="trending-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" alt="Nike Air Max">
+                        <span class="discount-badge">-40%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Nike Air Max 270</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(423)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹7,799</span>
+                            <span class="original-price">₹12,999</span>
+                        </div>
+                        <div class="savings">You Save: ₹5,200</div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/4113920/pexels-photo-4113920.jpeg" alt="Instant Pot">
+                        <span class="discount-badge">-50%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Instant Pot Duo 7-in-1</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹7,999</span>
+                            <span class="original-price">₹15,999</span>
+                        </div>
+                        <div class="savings">You Save: ₹8,000</div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Canon Camera">
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Canon EOS M50 Mark II</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹56,999</span>
+                            <span class="original-price">₹75,999</span>
+                        </div>
+                        <div class="savings">You Save: ₹19,000</div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Adidas Shoes">
+                        <span class="discount-badge">-45%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Adidas Ultraboost 22</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(856)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹9,349</span>
+                            <span class="original-price">₹16,999</span>
+                        </div>
+                        <div class="savings">You Save: ₹7,650</div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/4107123/pexels-photo-4107123.jpeg" alt="Dyson Vacuum">
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dyson V15 Detect</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(392)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹52,792</span>
+                            <span class="original-price">₹65,990</span>
+                        </div>
+                        <div class="savings">You Save: ₹13,198</div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1148399/pexels-photo-1148399.jpeg" alt="Book">
+                        <span class="discount-badge">-60%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">The Psychology of Money</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(1247)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹239</span>
+                            <span class="original-price">₹599</span>
+                        </div>
+                        <div class="savings">You Save: ₹360</div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal Categories -->
+    <section class="deal-categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Deal Categories</h2>
+            <div class="deal-categories-grid">
+                <div class="deal-category-card">
+                    <div class="deal-category-icon">📱</div>
+                    <h3 class="deal-category-title">Electronics Deals</h3>
+                    <p class="deal-category-desc">Up to 50% off on smartphones, laptops & more</p>
+                    <span class="deal-category-count">200+ deals</span>
+                </div>
+                <div class="deal-category-card">
+                    <div class="deal-category-icon">👕</div>
+                    <h3 class="deal-category-title">Fashion Deals</h3>
+                    <p class="deal-category-desc">Trendy clothes & accessories at best prices</p>
+                    <span class="deal-category-count">500+ deals</span>
+                </div>
+                <div class="deal-category-card">
+                    <div class="deal-category-icon">🏠</div>
+                    <h3 class="deal-category-title">Home & Kitchen</h3>
+                    <p class="deal-category-desc">Essential appliances for your home</p>
+                    <span class="deal-category-count">150+ deals</span>
+                </div>
+                <div class="deal-category-card">
+                    <div class="deal-category-icon">📚</div>
+                    <h3 class="deal-category-title">Books & Media</h3>
+                    <p class="deal-category-desc">Educational & entertainment content</p>
+                    <span class="deal-category-count">1000+ deals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-digi">DIGI</span><span class="logo-basket">BASKET</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted online marketplace for all your digital shopping needs. Quality products, great prices, fast delivery.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Policies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 DIGIBASKET. All rights reserved. Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
